@@ -10,7 +10,7 @@ class Script {
       $installedPackage = str_replace("/", ":", $event->getOperation()->getPackage()->getName());
 		if(explode(":", $installedPackage)[0] === "timephp"){
       	$content = json_decode(file_get_contents(__DIR__ . "/../components.json"), true);
-			$content[$installedPackage] = $installedPackage;	
+			$content[] = $installedPackage;	
 			file_put_contents(__DIR__ . "/../components.json", json_encode($content, JSON_PRETTY_PRINT));
 		}
    }
@@ -19,7 +19,9 @@ class Script {
       $uninstalledPackage = str_replace("/", ":", $event->getOperation()->getPackage()->getName());
 		if(explode(":", $uninstalledPackage)[0] === "timephp"){
       	$content = json_decode(file_get_contents(__DIR__ . "/../components.json"), true);
-      	unset($content[$uninstalledPackage]);
+      	if (($key = array_search($uninstalledPackage, $content)) !== false) {
+				unset($content[$key]);
+		  	}
 			file_put_contents(__DIR__ . "/../components.json", json_encode($content, JSON_PRETTY_PRINT));
 		}
    }
