@@ -1,23 +1,17 @@
 <?php
 
-// require __DIR__ . "/vendor/autoload.php";
-
-// if(class_exists("TimePHP\Foundation\Router")){
-//    echo "Router exists";
-// } else{
-//    echo "Router doesn't exists";
-// }
+require __DIR__ . "/vendor/autoload.php";
 
 
-$values = [
-   ["a","b","c","d"],
-   ["a","b","c","d"]
-];
+$lines = file('./test.php', FILE_IGNORE_NEW_LINES);
+$content = [];
+foreach($lines as $line){
+   $content[] = rtrim($line, "\t");
+}
 
-$newValues = array_map(function($element) {
-   return json_decode($element);
-}, array_unique(array_map(function($element) {
-   return json_encode($element);
-}, $values)));
+$content = array_filter($content, function($element) {
+   return !empty($element);
+});
 
-var_dump($values, $newValues);
+
+file_put_contents("./test2.php", implode("\n", $content));

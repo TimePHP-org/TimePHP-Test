@@ -2,15 +2,12 @@
     "name": "timephp/test",
     "description": "test composer package",
     "require": {
+        "symfony/var-dumper": "^5.1"
     },
     "autoload": {
         "psr-4": {
             "TimePHP\\": "src/"
         }
-    },
-    "scripts": {
-        "post-package-install": "TimePHP\\Script::postPackageInstall",
-        "pre-package-uninstall": "TimePHP\\Script::prePackageUninstall"
     }
     
 }
