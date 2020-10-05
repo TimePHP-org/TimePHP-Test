@@ -1,6 +1,25 @@
 {
     "name": "timephp/test",
-    "description": "test composer package",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "description": "Test package (do not use this)",
+    "homepage": "https://github.com/TimePHP-org/TimePHP-Test",
+    "keywords": ["TimePHP", "Framework", "PHP", "MVC", "Test"],
+    "minimum-stability": "dev",
+    "readme": "https://github.com/TimePHP-org/TimePHP-Test/blob/master/README.md",
+    "support": {
+        "email": "timephp.org@gmail.com",
+        "docs": "https://timephp-org.github.io/TimePHP-Docs/#/",
+        "issues": "https://github.com/TimePHP-org/TimePHP-Test/issues",
+        "source": "https://github.com/TimePHP-org/TimePHP-Test/releases"
+    },
+    "authors": [
+        {
+            "name": "Robin B",
+            "email": "timephp.org@gmail.com",
+            "role": "developer"
+        }
+    ],
     "require": {
         "symfony/var-dumper": "^5.1"
     },
