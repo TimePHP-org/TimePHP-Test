@@ -3,4 +3,5 @@
 require __DIR__ . "/vendor/autoload.php";
 
 
-shell_exec("composer require symfony/var-dumper");
+shell_exec("composer remove symfony/var-dumper");
+echo "test";
