@@ -1,0 +1,62 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "2a704e1d4346d4dfdcbefff55e09db0d",
+    "packages": [
+        {
+            "name": "timephp/urlparser",
+            "version": "0.0.1-alpha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TimePHP-org/TimePHP-UrlParser.git",
+                "reference": "5b05694f3a1c7e041e56e2c8efdbb3cb63f2e312"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TimePHP-org/TimePHP-UrlParser/zipball/5b05694f3a1c7e041e56e2c8efdbb3cb63f2e312",
+                "reference": "5b05694f3a1c7e041e56e2c8efdbb3cb63f2e312",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TimePHP\\UrlParser\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Robin B",
+                    "email": "timephp.org@gmail.com",
+                    "role": "developer"
+                }
+            ],
+            "description": "Little libe to manipulate url params from GET or POST requests",
+            "homepage": "https://github.com/TimePHP-org/TimePHP-UrlParser",
+            "keywords": [
+                "framework",
+                "mvc",
+                "php",
+                "timePHP"
+            ],
+            "time": "2020-10-16T15:33:47+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "timephp/urlparser": 15
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

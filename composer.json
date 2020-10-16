@@ -21,6 +21,7 @@
         }
     ],
     "require": {
+        "timephp/urlparser": "0.0.1-alpha"
     },
     "autoload": {
         "psr-4": {
